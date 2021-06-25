@@ -5,8 +5,175 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Calc"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="MainWindow" Height="550" Width="350">
+    <Grid Background="#6f0d2c" x:Name="LayoutRoot" >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBlock x:Name="TXT" 
+                   Grid.Column="0" 
+                   Grid.Row="0" 
+                   Grid.ColumnSpan="4" 
+                   TextAlignment="Right" 
+                   FontSize="30" 
+                   FontFamily="century gothic" 
+                   Foreground="#FFEBC5C0"/>
+
+        <TextBlock x:Name="txb"  
+                 Grid.Row="1" 
+                 Grid.Column="0" 
+                 Grid.ColumnSpan="4" 
+                 Foreground="#FFEBC5C0" 
+                 FontSize="40"  
+                 FontFamily="Century Gothic"
+                   TextAlignment="Right" />
+        <Button x:Name="btn0" 
+                Content="0"
+                Background="#FFEBC5C0"
+                Margin="1" 
+                Grid.Row="6" 
+                Grid.Column="0"
+                Grid.ColumnSpan="2" 
+                HorizontalContentAlignment="Center" 
+                VerticalContentAlignment="Center" 
+                FontFamily="Century Gothic" 
+                FontSize="16" >
+        </Button>
+
+        <Button x:Name="btn1"
+                Content="1" 
+                Margin="2"
+                Background="#FFEBC5C0"  
+                Grid.Row="5"
+                Grid.Column="0"
+                FontFamily="Century Gothic" 
+                FontSize="16" />
+        <Button x:Name="btn2" 
+                Content="2" 
+                Margin="2" 
+               Background="#FFEBC5C0"  
+                Grid.Row="5" 
+                Grid.Column="1" 
+                FontFamily="century gothic" 
+                FontSize="16" />
+        <Button x:Name="btn3" 
+                Content="3"
+                Margin="2"
+                Background="#FFEBC5C0"  
+                Grid.Row="5"
+                Grid.Column="2"
+                FontFamily="Century Gothic" 
+                FontSize="16" />
+        <Button x:Name="btn4" 
+                Content="4"
+                Margin="2"
+               Background="#FFEBC5C0"  
+                Grid.Row="4"
+                Grid.Column="0" FontSize="16" />
+        <Button x:Name="btn5"
+                Content="5"
+                Margin="2"
+                Background="#FFEBC5C0"  
+                Grid.Row="4" 
+                Grid.Column="1"  FontSize="16"/>
+        <Button x:Name="btn6" 
+                Content="6" 
+                Margin="2" 
+                Background="#FFEBC5C0"  
+                Grid.Row="4"
+                Grid.Column="2" FontSize="16" />
+        <Button x:Name="btn7" 
+                Content="7"
+                Margin="2" 
+                Background="#FFEBC5C0"  
+                Grid.Row="3" 
+                Grid.Column="0" FontSize="16" />
+        <Button x:Name="btn8" 
+                Content="8" 
+                Margin="2" 
+                Background="#FFEBC5C0"  
+                Grid.Row="3" 
+                Grid.Column="1" FontSize="16"/>
+        <Button x:Name="btn9" 
+                Content="9" 
+                Margin="2" 
+                Background="#FFEBC5C0"  
+                Grid.Row="3" 
+                Grid.Column="2" FontSize="16" />
+        <Button x:Name="btnc" 
+                Content="c" 
+                Margin="2" 
+               Background="#FFEBC5C0"  
+                Grid.Row="2" 
+                Grid.Column="0" 
+                FontSize="16"/>
+        <Button x:Name="btnproc" 
+                Content="%"
+                Margin="2"
+               Background="#FFEBC5C0"  
+                Grid.Row="2" 
+                Grid.Column="1" 
+                FontSize="16" />
+        <Button x:Name="btnplus" 
+                Content="+" 
+                Margin="2" 
+                Background="#FFF7E7E1" 
+                Grid.Row="5"
+                Grid.Column="3" 
+                FontSize="16" />
+        <Button x:Name="btnmin" 
+                Content="-" 
+                Margin="2" 
+                Background="#FFF7E7E1" 
+                Grid.Row="4" 
+                Grid.Column="3" 
+                FontSize="16" />
+        <Button x:Name="btnum" 
+                Content="*" 
+                Margin="2" 
+                Background="#FFF7E7E1" 
+                Grid.Row="3" 
+                Grid.Column="3" 
+                FontSize="16" />
+        <Button x:Name="btndel" 
+                Content="/" 
+                Margin="2" 
+                Background="#FFF7E7E1"
+                Grid.Row="2" 
+                Grid.Column="3" 
+                FontSize="16" />
+        <Button x:Name="btnclear" 
+                Margin="2" 
+                Background="#FFEBC5C0"  
+                Grid.Row="2" 
+                Grid.Column="2" 
+                FontSize="16" 
+                Content="&lt;-" />
+        <Button x:Name="btnres" 
+                Content="=" 
+                Margin="2" 
+                Background="#FFF7E7E1" 
+                Grid.Row="6" 
+                Grid.Column="3"
+                FontSize="16" />
+        <Button x:Name="btnza" 
+                Content="," 
+                Margin="2" 
+                Background="#FFEBC5C0" 
+                Grid.Row="6"
+                Grid.Column="2"
+                FontSize="16" />
     </Grid>
 </Window>
