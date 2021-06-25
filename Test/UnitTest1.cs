@@ -76,7 +76,7 @@ namespace Test
             double ex = 0;
             double res = Writing.multip(a, b);
             Assert.AreEqual(ex, res);
-        }  Assert.AreEqual(ex, res);
+        }
         
 
         [TestMethod]
